@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Interview Question Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Interview Question Generator</h1>
+      <p>Generate interview questions using Gemini AI</p>
+
+      <div class="input-group">
+        <label>Topic</label>
+        <input
+          type="text"
+          id="topic"
+          placeholder="Example: JavaScript, React, AWS, Docker"
+        />
+      </div>
+
+      <div class="row">
+        <div class="input-group">
+          <label>Difficulty</label>
+
+          <select id="difficulty">
+            <option>Beginner</option>
+            <option>Intermediate</option>
+            <option>Advanced</option>
+          </select>
+        </div>
+
+        <div class="input-group">
+          <label>Questions</label>
+
+          <select id="count">
+            <option>5</option>
+            <option>10</option>
+            <option>15</option>
+          </select>
+        </div>
+      </div>
+
+      <button id="generateBtn">Generate Questions</button>
+
+      <div id="loading"></div>
+
+      <div id="quiz"></div>
+
+      <button id="submitBtn" style="display: none">Submit Answer</button>
+
+      <button id="nextBtn" style="display: none">Next Question</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
