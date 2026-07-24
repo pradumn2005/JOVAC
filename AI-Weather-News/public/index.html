@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Weather & News</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+
+<header>
+
+    <h1>
+        <i class="fa-solid fa-cloud-sun"></i>
+        AI Weather & News
+    </h1>
+
+</header>
+
+
+<div class="container">
+
+    <!-- Search -->
+
+    <div class="search-box">
+
+        <input
+            type="text"
+            id="cityInput"
+            placeholder="Enter City Name">
+
+        <button id="searchBtn">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+        </button>
+
+    </div>
+
+
+    <!-- Weather -->
+
+    <section class="weather-card">
+
+        <h2>Current Weather</h2>
+
+        <div class="weather-top">
+
+            <img
+                id="weatherIcon"
+                src=""
+                alt="weather">
+
+            <div>
+
+                <h1 id="temp">--°C</h1>
+
+                <h3 id="cityName">
+                    Search a City
+                </h3>
+
+                <p id="description">
+                    --
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="weather-info">
+
+            <div class="info-box">
+
+                <i class="fa-solid fa-droplet"></i>
+
+                <span id="humidity">
+                    --
+                </span>
+
+                <small>Humidity</small>
+
+            </div>
+
+
+            <div class="info-box">
+
+                <i class="fa-solid fa-wind"></i>
+
+                <span id="wind">
+                    --
+                </span>
+
+                <small>Wind</small>
+
+            </div>
+
+
+            <div class="info-box">
+
+                <i class="fa-solid fa-temperature-half"></i>
+
+                <span id="feelsLike">
+                    --
+                </span>
+
+                <small>Feels Like</small>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- News -->
+
+    <section class="news-card">
+
+        <h2>
+            <i class="fa-solid fa-newspaper"></i>
+            Top Headlines
+        </h2>
+
+        <div id="newsContainer">
+
+        </div>
+
+    </section>
+
+
+
+    <!-- AI Assistant -->
+
+    <section class="ai-card">
+
+        <h2>
+
+            🤖 AI Assistant
+
+        </h2>
+
+        <textarea
+            id="aiQuestion"
+            placeholder="Ask anything about weather or news..."></textarea>
+
+        <button id="askAI">
+
+            Ask AI
+
+        </button>
+
+        <div id="aiResponse">
+
+            AI response will appear here...
+
+        </div>
+
+    </section>
+
+</div>
+
+
+<footer>
+
+    Made with ❤️ using Weather API, News API & Gemini AI
+
+</footer>
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
